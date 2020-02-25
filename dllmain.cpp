@@ -122,11 +122,11 @@ static __int64 __cdecl HookedDoComplete(unsigned __int16* startText, int b, int 
 
 static int WINAPI ExtendEntryPoint()
 {
-    for (HMODULE hModule = NULL; (hModule = DetourEnumerateModules(hModule)) != NULL;) {
+    /*for (HMODULE hModule = NULL; (hModule = DetourEnumerateModules(hModule)) != NULL;) {
         CHAR szName[MAX_PATH] = { 0 };
         GetModuleFileNameA(hModule, szName, sizeof(szName) - 1);
         printf("  %p: %s\n", hModule, szName);
-    }
+    }*/
 
     HMODULE cmdModuleHandle = GetModuleHandleA(NULL);
     RealDoComplete = (__int64 (*__cdecl)(unsigned __int16*, int, int, int, int, int))((long long)cmdModuleHandle + 0x2eadc);
