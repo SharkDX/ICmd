@@ -1,5 +1,6 @@
 # ICmd
-A small lightweight dll which **extends cmd.exe auto-complete capabilities (ipython like):**
+A small lightweight dll which **extends cmd.exe auto-complete capabilities (ipython like).**
+
 ![alt text](./preview.png)
 
 This program's output is a dll.
