@@ -24,12 +24,14 @@
 *.lai
 *.la
 *.a
-*.lib
 
 # Executables
 *.exe
 *.out
 *.app
+
+# IDA
+*.i64
 
 .vs/*
 x64/*

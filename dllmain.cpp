@@ -144,6 +144,7 @@ static int WINAPI ExtendEntryPoint()
     return RealEntryPoint();
 }
 
+
 BOOL __declspec(dllexport) DllMain(HINSTANCE hinst, DWORD dwReason, LPVOID reserved)
 {
     LONG error;    
